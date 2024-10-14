@@ -1,7 +1,27 @@
 
 <?=
-$msg = "hellasdsao";
+$msg = "hellasdsao" ;
+echo "<br/>"
+
+
+//this is a single line comment
+
+/*this
+is 
+multiple line
+comment 
+*/
 ?>
+
+<?php
+$msg = "hellasdsao";
+echo $msg;
+?>
+
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
