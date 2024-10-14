@@ -25,8 +25,31 @@ var_dump($friends); // return  of each array element  and array index mumber and
 echo "<br/>";
 print_r($friends); //is commonly used to display an array in a human-readable format. It's useful for debugging.
 echo "<br/>";
-echo implode(" -- " , $friends) // returns only the array values , seperated with first argument , in this case " -- "
+echo implode(" -- " , $friends); // returns only the array values , seperated with first argument , in this case " -- "
 
+
+$firstName = "Amine";
+$lastName = "Tamar";
+echo "<br/>";
+
+echo 'hi my name is' . ' ' . $firstName . ' ' . $lastName . "<br/>";
+
+echo "fsdfdsf";
+
+
+//some  Built in php functions 
+
+//rand() generate a random integer
+ // getrandmax() shows largest possible integer that could be returned by rand()
+ //rand (1,10)  generate random numbers from 1 to 10
+
+
+
+ //round(4.7) round the number to the nears integer / output = 5
+
+ //ceil (4.7) round the number to the height next integer / output = 5
+
+ //floor (4.7) round the number to the lowest next integer / output = 4
 
 ?>
 
