@@ -1,13 +1,13 @@
-<?php 
+<?php
 $title = "Learn PHP From Scratchh";
-$welcome ="Welcome To The Course !!!";
+$welcome = "Welcome To The Course !!!";
 
 
 // php functions 
 // strings data type
 var_dump($title); // this functions returns variable type and number of characters ex : string(23) "Learn PHP From Scratchh"
 echo "<br/>";
-echo gettype($title);// this function only returns variable type : ex : String
+echo gettype($title); // this function only returns variable type : ex : String
 // integer data type
 echo "<br/>";
 $age = 15;
@@ -17,7 +17,7 @@ echo gettype($age); // returns type Ex : integer
 
 // php is losly typed , meaning we dont have do sepcify type when creatin a variale , php guess that automaticaly 
 
-$friends = ["asdsa","dsad","dd"];
+$friends = ["asdsa", "dsad", "dd"];
 echo "<br/>";
 echo $friends; // this does not print the array and throws an error
 echo "<br/>";
@@ -25,9 +25,9 @@ var_dump($friends); // return  of each array element  and array index mumber and
 echo "<br/>";
 print_r($friends); //is commonly used to display an array in a human-readable format. It's useful for debugging.
 echo "<br/>";
-echo implode(" -- " , $friends); // returns only the array values , seperated with first argument , in this case " -- "
+echo implode(" -- ", $friends); // returns only the array values , seperated with first argument , in this case " -- "
 
-$names = ["jack","amine","doe"];
+$names = ["jack", "amine", "doe"];
 var_dump($names);
 
 $firstName = "Amine";
@@ -42,23 +42,23 @@ echo "fsdfdsf";
 //some  Built in php functions 
 
 //rand() generate a random integer
- // getrandmax() shows largest possible integer that could be returned by rand()
- //rand (1,10)  generate random numbers from 1 to 10
+// getrandmax() shows largest possible integer that could be returned by rand()
+//rand (1,10)  generate random numbers from 1 to 10
 
 
 
- //round(4.7) round the number to the nears integer / output = 5
+//round(4.7) round the number to the nears integer / output = 5
 
- //ceil (4.7) round the number to the height next integer / output = 5
+//ceil (4.7) round the number to the height next integer / output = 5
 
- //floor (4.7) round the number to the lowest next integer / output = 4
+//floor (4.7) round the number to the lowest next integer / output = 4
 
 
 
- //Array Functions 
+//Array Functions 
 
- //sort  sort element of arrays 
- //rsort   reverse sort the elements of the arrays
+//sort  sort element of arrays 
+//rsort   reverse sort the elements of the arrays
 // array_push ($array , elements)   push at the end of the array 
 // array_pop ($array)  remove the last element
 // array _shift ($array) remove the first elemnt 
@@ -70,23 +70,79 @@ echo "fsdfdsf";
 
 //explode takes a string and tunred it into an array , you seperate the element by a character 
 echo "<br/>";
-$string ="this/is/a/string";
+$string = "this/is/a/string";
 echo "<br/>";
-$arrayFromString = explode("/",$string);
+$arrayFromString = explode("/", $string);
 echo "<br/>";
 
 print_r($arrayFromString);
 echo "<br/>";
- $output = null;
- echo "<br/>";
- $ids = [10,22,23,35];
- $users = ["user1","user2","user3"];
+$output = null;
+echo "<br/>";
+$ids = [10, 22, 23, 35];
+$users = ["user1", "user2", "user3"];
 
- $output = count($ids)
+$output = count($ids);
 
 // implode you turn an array into a string and you choose a charateer to seperat each element 
 
 
+// array challenge 
+
+$numbers = [0, 2, 3, 4, 8, 5, 6];
+$sum = array_sum($numbers);
+$amount = count($numbers);
+echo  "the sum of the" . " " . $amount . " " .  "numbers is" . " " . $sum;
+
+echo "<br/>";
+$colors = ["red", "blue", "green", "yellow"];
+$colors = array_reverse($colors);
+print_r($colors);
+echo "<br/>";
+array_push($colors, "purple");
+array_push($colors, "orange");
+print_r($colors);
+echo "<br/>";
+
+$colors[1] = "pink";
+print_r($colors);
+echo "<br/>";
+
+array_pop($colors);
+echo "<br/>";
+print_r($colors);
+
+$jobListings = [
+
+    [
+        "id" => 0,
+        "job_title" => "web dev",
+        "company" => "BerlinGmbh3",
+        "contact_email" => "amine3@gmail.com",
+        "contact_phone" => "+212 55 5 1 55",
+        "skills" => ["php","css","html"]
+    ],
+
+    [
+        "id" => 1,
+        "job_title" => "front web dev",
+        "company" => "BerlinGmbh1",
+        "contact_email" => "amine2@gmail.com",
+        "contact_phone" => "+212 55 5 3 55",
+        "skills" => ["js","css","html"]
+    ]
+  ,
+  [
+    "id" => 2,
+    "job_title" => "backend web dev",
+    "company" => "BerlinGmbh2",
+    "contact_email" => "amine1@gmail.com",
+    "contact_phone" => "+212 55 5 4 55",
+    "skills" => ["php","Mysql","html"]
+]
+  ];
+echo "<br/>";
+print_r($jobListings)
 
 
 ?>
@@ -100,7 +156,7 @@ echo "<br/>";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title> <?= $title ?>  </title>
+    <title> <?= $title ?> </title>
 </head>
 
 <body class="bg-gray-100">
@@ -115,15 +171,17 @@ echo "<br/>";
             <p> <?php echo $output  ?></p>
             <h2> Ids Array :</h2>
             <p>
-                <pre>
-                    <?php print_r($ids)?>
+            <pre>
+                    <?php print_r($ids) ?>
                 </pre>
             </p>
             <h2> Users Array :</h2>
             <p>
-                <pre>
-                    <?php print_r($users)?>
-                </pre>
+           <pre>
+           <?php print_r($jobListings) ?>
+           </pre>
+                    
+                
             </p>
         </div>
     </div>
