@@ -68,13 +68,24 @@ echo "fsdfdsf";
 // array_slice  this function return a new array
 
 
+//explode takes a string and tunred it into an array , you seperate the element by a character 
+echo "<br/>";
+$string ="this/is/a/string";
+echo "<br/>";
+$arrayFromString = explode("/",$string);
+echo "<br/>";
 
-
+print_r($arrayFromString);
+echo "<br/>";
  $output = null;
+ echo "<br/>";
  $ids = [10,22,23,35];
  $users = ["user1","user2","user3"];
 
  $output = count($ids)
+
+// implode you turn an array into a string and you choose a charateer to seperat each element 
+
 
 
 
