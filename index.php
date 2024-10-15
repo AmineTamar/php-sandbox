@@ -27,6 +27,8 @@ print_r($friends); //is commonly used to display an array in a human-readable fo
 echo "<br/>";
 echo implode(" -- " , $friends); // returns only the array values , seperated with first argument , in this case " -- "
 
+$names = ["jack","amine","doe"];
+var_dump($names);
 
 $firstName = "Amine";
 $lastName = "Tamar";
@@ -51,6 +53,31 @@ echo "fsdfdsf";
 
  //floor (4.7) round the number to the lowest next integer / output = 4
 
+
+
+ //Array Functions 
+
+ //sort  sort element of arrays 
+ //rsort   reverse sort the elements of the arrays
+// array_push ($array , elements)   push at the end of the array 
+// array_pop ($array)  remove the last element
+// array _shift ($array) remove the first elemnt 
+// array_unshift ($array) add elemnt at the begining of the array
+
+
+// array_slice  this function return a new array
+
+
+
+
+ $output = null;
+ $ids = [10,22,23,35];
+ $users = ["user1","user2","user3"];
+
+ $output = count($ids)
+
+
+
 ?>
 
 
@@ -74,7 +101,19 @@ echo "fsdfdsf";
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6">
             <h2 class="text-2xl font-semibold mb-4"><?= $welcome ?></h2>
-            <p>In this course, you will learn the fundamentals of the PHP language</p>
+            <p> <?php echo $output  ?></p>
+            <h2> Ids Array :</h2>
+            <p>
+                <pre>
+                    <?php print_r($ids)?>
+                </pre>
+            </p>
+            <h2> Users Array :</h2>
+            <p>
+                <pre>
+                    <?php print_r($users)?>
+                </pre>
+            </p>
         </div>
     </div>
 </body>
