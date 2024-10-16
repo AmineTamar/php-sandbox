@@ -168,6 +168,22 @@ while ($i < 5 ) {
 
     $i++;
 }
+echo  "<br/>" ;
+$age=20;
+
+if($age == 2){
+    $age = 23;
+    echo $age;
+}
+elseif($age > 21){
+  
+    echo "its bigger than 21";
+}
+else{
+ echo $age;
+}
+
+
 ?>
 
 
