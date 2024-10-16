@@ -120,7 +120,7 @@ $jobListings = [
         "company" => "BerlinGmbh3",
         "contact_email" => "amine3@gmail.com",
         "contact_phone" => "+212 55 5 1 55",
-        "skills" => ["php","css","html"]
+        "skills" => ["php", "css", "html"]
     ],
 
     [
@@ -129,22 +129,28 @@ $jobListings = [
         "company" => "BerlinGmbh1",
         "contact_email" => "amine2@gmail.com",
         "contact_phone" => "+212 55 5 3 55",
-        "skills" => ["js","css","html"]
+        "skills" => ["js", "css", "html"]
+    ],
+    [
+        "id" => 2,
+        "job_title" => "backend web dev",
+        "company" => "BerlinGmbh2",
+        "contact_email" => "amine1@gmail.com",
+        "contact_phone" => "+212 55 5 4 55",
+        "skills" => ["php", "Mysql", "html"]
     ]
-  ,
-  [
-    "id" => 2,
-    "job_title" => "backend web dev",
-    "company" => "BerlinGmbh2",
-    "contact_email" => "amine1@gmail.com",
-    "contact_phone" => "+212 55 5 4 55",
-    "skills" => ["php","Mysql","html"]
-]
-  ];
+];
 echo "<br/>";
-print_r($jobListings)
+print_r($jobListings);
 
 
+$i = 0;
+while ($i < 5 ) {
+
+    echo  "<br/>" .  $i;
+
+    $i++;
+}
 ?>
 
 
@@ -177,11 +183,19 @@ print_r($jobListings)
             </p>
             <h2> Users Array :</h2>
             <p>
-           <pre>
-           <?php print_r($jobListings) ?>
-           </pre>
-                    
-                
+
+            <ul>
+
+
+                <?php for ($i = 0; $i <= 10; $i=$i+4): ?>
+
+                    <li>Number : <?= $i ?> </li>
+
+                <?php endfor; ?>
+
+
+            </ul>
+
             </p>
         </div>
     </div>
