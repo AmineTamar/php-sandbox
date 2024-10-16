@@ -39,6 +39,23 @@ echo 'hi my name is' . ' ' . $firstName . ' ' . $lastName . "<br/>";
 echo "fsdfdsf";
 
 
+$name = 'Linus';
+function myTest() {
+  $name = 'Tobias';
+}
+myTest();
+echo $name;
+
+
+
+echo "<br/>";
+
+$name = 'Linus';
+print '<h1>Hello $name</h1>';
+print "<h1>Hello $name</h1>";
+
+ echo strlen("Hello World!");
+
 //some  Built in php functions 
 
 //rand() generate a random integer
