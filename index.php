@@ -233,6 +233,8 @@ else{
 }
 
 
+
+
 ?>
 
 
@@ -245,15 +247,54 @@ else{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title> <?= $title ?> </title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5 ,50px);
+            grid-gap: 5px;
+        }
+        .grid-item {
+            width: 50px;    
+            height: 50px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 50px;
+
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100">
+
+
+
+
+<div class="grid-container">
+
+<?php for($i=0 ; $i<5 ;$i++) : ?>
+    <?php for($j=0 ; $j<5 ;$j++): ?>
+ <div class="grid-item">
+        <?php echo $i ."-". $j ?>
+ </div>
+
+ <?php endfor ?>
+
+<?php endfor ?>
+
+</div>
+
+
+
     <header class="bg-blue-500 text-white p-4">
         <div class="container mx-auto">
             <h1 class="text-3xl font-semibold"><?= $title ?></h1>
         </div>
     </header>
     <div class="container mx-auto p-4 mt-4">
+
+
+
         <div class="bg-white rounded-lg shadow-md p-6">
             <h2 class="text-2xl font-semibold mb-4"><?= $welcome ?></h2>
             <p> <?php echo $output  ?></p>
