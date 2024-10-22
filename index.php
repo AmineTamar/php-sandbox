@@ -281,7 +281,7 @@ $listings = [
       'description' => 'We are seeking a talented UX designer to create intuitive and visually appealing user interfaces.',
       'salary' => 70000,
       'location' => 'Seattle',
-      'tags' => ['User Experience', 'Wireframing', 'Prototyping']
+      'tags' => ['User Experience', 'Wireframing', 'Prototyping', 'Communication']
     ],
     [
       'id' => 5,
