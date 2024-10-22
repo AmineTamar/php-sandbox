@@ -1,11 +1,18 @@
 <?php
 
+
+
+
+
+
+
+
 class Lasagna
 {
     public function expectedCookTime()
     {
         // Implement the expectedCookTime method
-      return 40;
+        return 40;
     }
 
     public function remainingCookTime($elapsed_minutes)
@@ -13,8 +20,6 @@ class Lasagna
         // Implement the remainingCookTime method
 
         return   $this->expectedCookTime() - $elapsed_minutes;
-
-      
     }
 
     public function totalPreparationTime($layers_to_prep)
@@ -89,8 +94,9 @@ echo "fsdfdsf";
 
 
 $name = 'Linus';
-function myTest() {
-  $name = 'Tobias';
+function myTest()
+{
+    $name = 'Tobias';
 }
 myTest();
 echo $name;
@@ -103,7 +109,7 @@ $name = 'Linus';
 print '<h1>Hello $name</h1>';
 print "<h1>Hello $name</h1>";
 
- echo strlen("Hello World!");
+echo strlen("Hello World!");
 
 //some  Built in php functions 
 
@@ -211,25 +217,23 @@ print_r($jobListings);
 
 
 $i = 0;
-while ($i < 5 ) {
+while ($i < 5) {
 
     echo  "<br/>" .  $i;
 
     $i++;
 }
-echo  "<br/>" ;
-$age=20;
+echo  "<br/>";
+$age = 20;
 
-if($age == 2){
+if ($age == 2) {
     $age = 23;
     echo $age;
-}
-elseif($age > 21){
-  
+} elseif ($age > 21) {
+
     echo "its bigger than 21";
-}
-else{
- echo $age;
+} else {
+    echo $age;
 }
 
 
@@ -242,56 +246,56 @@ else{
 $names = ['John Doe', 'Matthew Thomas', 'Jose Ramirez', 'Mary Jane'];
 
 $users = [
-  ['name' => 'John', 'email' => 'john@email.com'],
-  ['name' => 'Jane', 'email' => 'jane@email.com'],
-  ['name' => 'Joe', 'email' => 'joe@email.com'],
-  ['name' => 'Mary', 'email' => 'mary@email.com']
+    ['name' => 'John', 'email' => 'john@email.com'],
+    ['name' => 'Jane', 'email' => 'jane@email.com'],
+    ['name' => 'Joe', 'email' => 'joe@email.com'],
+    ['name' => 'Mary', 'email' => 'mary@email.com']
 ];
 
 
 
 $listings = [
     [
-      'id' => 1,
-      'title' => 'Software Engineer',
-      'description' => 'We are seeking a skilled software engineer to develop high-quality software solutions.',
-      'salary' => 80000,
-      'location' => 'San Francisco',
-      'tags' => ['Software Development', 'Java', 'Python']
+        'id' => 1,
+        'title' => 'Software Engineer',
+        'description' => 'We are seeking a skilled software engineer to develop high-quality software solutions.',
+        'salary' => 80000,
+        'location' => 'San Francisco',
+        'tags' => ['Software Development', 'Java', 'Python']
     ],
     [
-      'id' => 2,
-      'title' => 'Marketing Specialist',
-      'description' => 'We are looking for a marketing specialist to develop and implement effective marketing strategies.',
-      'salary' => 60000,
-      'location' => 'New York',
-      'tags' => ['Digital Marketing', 'Social Media', 'SEO']
+        'id' => 2,
+        'title' => 'Marketing Specialist',
+        'description' => 'We are looking for a marketing specialist to develop and implement effective marketing strategies.',
+        'salary' => 60000,
+        'location' => 'New York',
+        'tags' => ['Digital Marketing', 'Social Media', 'SEO']
     ],
     [
-      'id' => 3,
-      'title' => 'Accountant',
-      'description' => 'We are hiring an experienced accountant to handle financial transactions and ensure compliance.',
-      'salary' => 55000,
-      'location' => 'Chicago',
-      'tags' => ['Accounting', 'Bookkeeping', 'Financial Reporting']
+        'id' => 3,
+        'title' => 'Accountant',
+        'description' => 'We are hiring an experienced accountant to handle financial transactions and ensure compliance.',
+        'salary' => 55000,
+        'location' => 'Chicago',
+        'tags' => ['Accounting', 'Bookkeeping', 'Financial Reporting']
     ],
     [
-      'id' => 4,
-      'title' => 'UX Designer',
-      'description' => 'We are seeking a talented UX designer to create intuitive and visually appealing user interfaces.',
-      'salary' => 70000,
-      'location' => 'Seattle',
-      'tags' => ['User Experience', 'Wireframing', 'Prototyping', 'Communication']
+        'id' => 4,
+        'title' => 'UX Designer',
+        'description' => 'We are seeking a talented UX designer to create intuitive and visually appealing user interfaces.',
+        'salary' => 70000,
+        'location' => 'Seattle',
+        'tags' => ['User Experience', 'Wireframing', 'Prototyping', 'Communication']
     ],
     [
-      'id' => 5,
-      'title' => 'Customer Service Representative',
-      'description' => 'We are looking for a friendly customer service representative to assist customers and resolve issues.',
-      'salary' => 40000,
-      'location' => 'New York',
-      'tags' => ['Customer Support', 'Communication', 'Problem Solving']
+        'id' => 5,
+        'title' => 'Customer Service Representative',
+        'description' => 'We are looking for a friendly customer service representative to assist customers and resolve issues.',
+        'salary' => 40000,
+        'location' => 'New York',
+        'tags' => ['Customer Support', 'Communication', 'Problem Solving']
     ],
-  ];
+];
 
 
 
@@ -312,11 +316,12 @@ $listings = [
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(5 ,50px);
+            grid-template-columns: repeat(5, 50px);
             grid-gap: 5px;
         }
+
         .grid-item {
-            width: 50px;    
+            width: 50px;
             height: 50px;
             background-color: lightblue;
             text-align: center;
@@ -330,116 +335,41 @@ $listings = [
 
 
 
-<header class="bg-blue-500 text-white p-4">
-    <div class="container mx-auto">
-      <h1 class="text-3xl font-semibold">Job Listings</h1>
-    </div>
-  </header>
-  <div class="container mx-auto p-4 mt-4">
-    <!-- Output -->
-
-    <?php foreach($listings as $job): ?>
-    <div class="md my-4">
-      <div class="bg-white rounded-lg shadow-md">
-
-      
-        <div class="p-4">
-          <h2 class="text-xl font-semibold"><?= $job["title"] ?></h2>
-          <p class="text-gray-700 text-lg mt-2"><?= $job["description"] ?></p>
-          <ul class="mt-4">
-            <li class="mb-2">
-              <strong>Salary:</strong> <?= $job["salary"] ?>
-            </li>
-            <li class="mb-2">
-              <strong>Location:</strong> <?= $job["location"] ?>
-            </li>
-            <li class="mb-2">
-              <strong>Tags:</strong> <?= implode(", ", $job["tags"]) ?>
-            </li>
-          </ul>
+    <header class="bg-blue-500 text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-semibold">Job Listings</h1>
         </div>
-      </div>
-    </div>
+    </header>
+    <div class="container mx-auto p-4 mt-4">
+        <!-- Output -->
 
-    <?php endforeach ?>
-
-   
-  </div>
-
-
+        <?php foreach ($listings as $job): ?>
+            <div class="md my-4">
+                <div class="bg-white rounded-lg shadow-md">
 
 
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold"><?= $job["title"] ?></h2>
+                        <p class="text-gray-700 text-lg mt-2"><?= $job["description"] ?></p>
+                        <ul class="mt-4">
+                            <li class="mb-2">
+                                <strong>Salary:</strong> <?= $job["salary"] ?>
+                            </li>
+                            <li class="mb-2">
+                                <strong>Location:</strong> <?= $job["location"] ?>
+                            </li>
+                            <li class="mb-2">
+                                <strong>Tags:</strong> <?= implode(", ", $job["tags"]) ?>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-
-
-
-<header class="bg-blue-500 text-white p-4">
-    <div class="container mx-auto">
-      <h1 class="text-3xl font-semibold">PHP From Scratch</h1>
-    </div>
-  </header>
-  <div class="container mx-auto p-4 mt-4">
-    <div class="bg-white rounded-lg shadow-md p-6 mt-6">
-      <!-- Output -->
-      <h3 class="text-xl font-semibold mb-4">Using a for loop</h3>
-      <ul class="mb-6">
-  <?php for ($i=0; $i < count($names); $i++) :?>
-<li> <?php echo $names[$i] ?></li>
-  <?php endfor ?>
-
-      </ul>
-      <h3 class="text-xl font-semibold mb-4">Using a foreach loop</h3>
-      <ul class="mb-6">
-
-      <?php foreach($names as $name) :?>
-
-        <li> <?= $name ?></li>
- 
         <?php endforeach ?>
 
 
-
-      </ul>
-      <h3 class="text-xl font-semibold mb-4">Using a foreach loop with index</h3>
-      <ul class="mb-6">
-
-      
-      <?php foreach($names as $index => $name) :?>
-
-<li> <?=  "index is ". " " .$index ." "."value is" . " " . $name ?></li>
-
-<?php endforeach ?>
-
-
-      </ul>
-      <h3 class="text-xl font-semibold mb-4">Using a foreach loop with associative array</h3>
-      <ul class="mb-6">
-
-      <?php foreach($users as $user) :?>
-
-<li> <?= $user["name"]. " " .$user["email"] ?></li>
-
-<?php endforeach ?>
-
-
-      </ul>
-      <h3 class="text-xl font-semibold mb-4">Getting key names and values from associative array</h3>
-      <?php foreach($users as $user) :?>
-        <?php foreach($user as $key => $value) :?>
-
-            <li> <?= $key . " " . "$value" ?></li>
-
- 
-
-
-<?php endforeach ?>
-
-<?php endforeach ?>
-
-
-      <ul class="mb-6"></ul>
     </div>
-  </div>
 
 
 
@@ -447,34 +377,109 @@ $listings = [
 
 
 
-<div class="grid-container">
 
-<?php for($i=0 ; $i<5 ;$i++) : ?>
-    <?php for($j=0 ; $j<5 ;$j++): ?>
- <div class="grid-item">
-        <?php echo $i ."-". $j ?>
- </div>
+    <header class="bg-blue-500 text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-semibold">PHP From Scratch</h1>
+        </div>
+    </header>
+    <div class="container mx-auto p-4 mt-4">
+        <div class="bg-white rounded-lg shadow-md p-6 mt-6">
+            <!-- Output -->
+            <h3 class="text-xl font-semibold mb-4">Using a for loop</h3>
+            <ul class="mb-6">
+                <?php for ($i = 0; $i < count($names); $i++) : ?>
+                    <li> <?php echo $names[$i] ?></li>
+                <?php endfor ?>
 
- <?php endfor ?>
+            </ul>
+            <h3 class="text-xl font-semibold mb-4">Using a foreach loop</h3>
+            <ul class="mb-6">
 
-<?php endfor ?>
+                <?php foreach ($names as $name) : ?>
 
-</div>
+                    <li> <?= $name ?></li>
+
+                <?php endforeach ?>
+
+
+
+            </ul>
+            <h3 class="text-xl font-semibold mb-4">Using a foreach loop with index</h3>
+            <ul class="mb-6">
+
+
+                <?php foreach ($names as $index => $name) : ?>
+
+                    <li> <?= "index is " . " " . $index . " " . "value is" . " " . $name ?></li>
+
+                <?php endforeach ?>
+
+
+            </ul>
+            <h3 class="text-xl font-semibold mb-4">Using a foreach loop with associative array</h3>
+            <ul class="mb-6">
+
+                <?php foreach ($users as $user) : ?>
+
+                    <li> <?= $user["name"] . " " . $user["email"] ?></li>
+
+                <?php endforeach ?>
+
+
+            </ul>
+            <h3 class="text-xl font-semibold mb-4">Getting key names and values from associative array</h3>
+            <?php foreach ($users as $user) : ?>
+                <?php foreach ($user as $key => $value) : ?>
+
+                    <li> <?= $key . " " . "$value" ?></li>
 
 
 
 
-<?php 
+                <?php endforeach ?>
 
-$names = ['John Doe', 'Matthew Thomas', 'Jose Ramirez', 'Mary Jane'];
+            <?php endforeach ?>
 
-$users = [
-  ['name' => 'John', 'email' => 'john@email.com'],
-  ['name' => 'Jane', 'email' => 'jane@email.com'],
-  ['name' => 'Joe', 'email' => 'joe@email.com'],
-  ['name' => 'Mary', 'email' => 'mary@email.com']
-];
-?>
+
+            <ul class="mb-6"></ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="grid-container">
+
+        <?php for ($i = 0; $i < 5; $i++) : ?>
+            <?php for ($j = 0; $j < 5; $j++): ?>
+                <div class="grid-item">
+                    <?php echo $i . "-" . $j ?>
+                </div>
+
+            <?php endfor ?>
+
+        <?php endfor ?>
+
+    </div>
+
+
+
+
+    <?php
+
+    $names = ['John Doe', 'Matthew Thomas', 'Jose Ramirez', 'Mary Jane'];
+
+    $users = [
+        ['name' => 'John', 'email' => 'john@email.com'],
+        ['name' => 'Jane', 'email' => 'jane@email.com'],
+        ['name' => 'Joe', 'email' => 'joe@email.com'],
+        ['name' => 'Mary', 'email' => 'mary@email.com']
+    ];
+    ?>
 
 
 
@@ -505,11 +510,35 @@ $users = [
             <ul>
 
 
-                <?php for ($i = 0; $i <= 10; $i=$i+4): ?>
+                <?php $arraychal = [1, 2, 3, 4, 5];
 
-                    <li>Number : <?= $i ?> </li>
+                $sum = 0; ?>
+
+                <?php for ($i = 1; $i <= 10; $i++): ?>
+
+                    <?php for ($j = 1; $j <= 10; $j++): ?>
+                        <li> <?= $i . "x" . $j . "=" .  $i * $j ?> </li>
+                    <?php endfor; ?>
 
                 <?php endfor; ?>
+
+
+                <?php foreach ($arraychal as  $number): ?>
+
+
+                    <li><?php $sum = $sum + $number  ?> </li>
+
+
+                <?php endforeach; ?>
+                <?php echo $sum ?>
+
+
+             
+
+
+
+
+
 
 
             </ul>
